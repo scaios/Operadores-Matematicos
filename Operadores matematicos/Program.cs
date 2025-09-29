@@ -17,7 +17,8 @@ namespace Operadores_matematicos
             Console.WriteLine("Aperte 5 para aprender sobre o Resto da divisão: \nAperte 6 para aprender sobre Potenciação:");
             Console.WriteLine("Aperte 7 para aprender sobre Radiciação: \nAperte 8 para aprender sobre Maximo e o minimo:");
             Console.WriteLine("Aperte 9 para aprender sobre Modulo: \nAperte 10 para aprender sobre Operações trigonométricas:");
-            Console.WriteLine("Aperte 11 para aprender a arredondar numeros: \n");
+            Console.WriteLine("Aperte 11 para aprender a arredondar numeros: \nAperte 12 para aprender sobre Logaritmo");
+            Console.WriteLine("Aperte 13 para aprender sobre Operadores de incremento e decremento: \n");
             string input = Console.ReadLine();
 
             int escolha;
@@ -34,6 +35,15 @@ namespace Operadores_matematicos
                         Console.WriteLine("\nSe você tem o valor " + numero1 + " e deseja somar com o valor " + numero2 + " você ira iniciar outra variavel somando os dois valores, desta forma:\ndouble resultado = numero1 + numero2;");
                         Console.WriteLine("Exemplo:");
                         Console.WriteLine("Resultado da soma é:" + resultado + "\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        char fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        } 
                         break;
 
                     case 2:
@@ -48,6 +58,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("Se invertermos a ordem das variaveis ficara assim: ");
                         resultadoSubtracao = numero2 - numero1;
                         Console.WriteLine("Resultado da subtração é:" + resultadoSubtracao + "\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 3:
@@ -60,6 +80,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("Exemplo:");
                         Console.WriteLine("Resultado da multiplicacão é:" + resultadoMultiplicacao + "\n");
                         Console.WriteLine("Se invertermos a ordem das variaveis o resultado não mudara.");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 4:
@@ -74,6 +104,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("Se invertermos a ordem das variaveis ficara assim: ");
                         resultadoSubtracao = numero2 / numero1;
                         Console.WriteLine("Resultado da divisão é:" + resultadoDivisao + "\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 5:
@@ -86,6 +126,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("Exemplo:");
                         Console.WriteLine("Resto da divisão é:" + resultadoResto + "\n");
                         Console.WriteLine("Se invertermos a ordem das variáveis, o resultado muda.\r\nQuando o número que está sendo dividido é menor que o divisor, o quociente é 0.\r\nPor isso, o resto da divisão será o próprio número dividido.");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 6:
@@ -97,6 +147,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("O valor da potenciação de 4 elevado a 2 é: " + potenciacao + "\n");
                         Console.WriteLine("Lembre-se: o primeiro número é a base, e o segundo é o expoente.");
                         Console.WriteLine("Ou seja: 4^2 significa 4 multiplicado por 4, que resulta em 16.");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 7:
@@ -110,6 +170,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("O valor da raiz cúbica de 27 é: " + radiciacao + "\n");
                         Console.WriteLine("Lembre-se: a radiciação é o inverso da potenciação.");
                         Console.WriteLine("Ou seja, a raiz cúbica de 27 é 3, pois 3^3 = 27.");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 8:
@@ -122,6 +192,16 @@ namespace Operadores_matematicos
                         Console.WriteLine("\nExemplo com os números 4 e 8:");
                         Console.WriteLine("O maior valor é: " + maximo);
                         Console.WriteLine("O menor valor é: " + minimo + "\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 9:
@@ -132,13 +212,56 @@ namespace Operadores_matematicos
                         Console.WriteLine($"O módulo de -10 é: {modulo} \n");
                         Console.WriteLine("Lembre-se: o módulo ignora o sinal do número.");
                         Console.WriteLine("Ou seja, -10 vira 10, e 10 continua sendo 10.");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 10:
-                        Console.WriteLine("\nOperações trigonométricas");
+                        Console.WriteLine("\nOperações Trigonométricas");
+                        double angulo = 30 * (2 * Math.PI) / 360; // converte 30 graus para radianos
+                        double seno = Math.Sin(angulo);           // calcula o seno do ângulo
+                        Console.WriteLine("As funções trigonométricas em C# trabalham com ângulos em radianos.");
+                        Console.WriteLine("Para converter graus em radianos usamos: double angulo = 30 * (2 * Math.PI) / 360");
+                        Console.WriteLine("\nExemplo com 30°:");
+                        Console.WriteLine("Ângulo em radianos: " + angulo);
+                        Console.WriteLine("Seno de 30°: " + seno);
+                        Console.WriteLine("\nFunções principais:");
+                        Console.WriteLine("Seno -> Math.Sin(angulo)");
+                        Console.WriteLine("Cosseno -> Math.Cos(angulo)");
+                        Console.WriteLine("Tangente -> Math.Tan(angulo)");
+                        Console.WriteLine("\nFunções inversas (retornam o ângulo a partir do valor):");
+                        Console.WriteLine("Arcseno -> Math.Asin(valor)");
+                        Console.WriteLine("Arccosseno -> Math.Acos(valor)");
+                        Console.WriteLine("Arctangente -> Math.Atan(valor)");
+                        double arcSeno = Math.Asin(seno); // retorna o ângulo em radianos
+                        Console.WriteLine("\nExemplo inverso:");
+                        Console.WriteLine("Para fazer a conversão inversa, pegamos o seno calculado e usamos Math.Asin(seno)");
+                        Console.WriteLine("Arcseno do seno de 30° (em radianos): " + arcSeno);
+                        double arcSenoGraus = arcSeno * 360 / (2 * Math.PI);                        // Converte o ângulo de radianos para graus
+                        Console.WriteLine("Para converter radianos em graus usamos: double arcSenoGraus = arcSeno * 360 / (2 * Math.PI)");
+                        Console.WriteLine("Arcseno do seno de 30° (em graus): " + arcSenoGraus + "°\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 11:
+
                         double num = 3.33;
                         double arreddondandoParaCima = Math.Ceiling(num);
                         Console.WriteLine("\nArredondamento de números");
@@ -147,6 +270,16 @@ namespace Operadores_matematicos
                         double num1 = 5.55;
                         double arredondandoParaBaixo = Math.Floor(num1);
                         Console.WriteLine($"O numero 5.55 arredondado para baixo ficara:{arredondandoParaBaixo}");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 12:
@@ -154,7 +287,6 @@ namespace Operadores_matematicos
                         double baseE1 = Math.Log(Math.E); 
                         double baseE2 = Math.Log(Math.E * Math.E * Math.E); // resultado é 3, pois e^3 = e * e * e
                         Console.WriteLine("\nLogaritmo");
-                        Console.WriteLine("O logaritmo responde à pergunta:");
                         Console.WriteLine("'Qual expoente devo colocar na BASE para chegar no NÚMERO?'\n");
                         Console.WriteLine("No logaritmo temos 3 partes:");
                         Console.WriteLine("Base - o número fixo usado na potência");
@@ -170,67 +302,42 @@ namespace Operadores_matematicos
                         Console.WriteLine("Ex 3: Logaritmo natural de e³");
                         Console.WriteLine("Math.Log(e^3) = " + baseE2);
                         Console.WriteLine("Aqui: BASE = e, NÚMERO = e^3, EXPOENTE = 3 (pois e^3 = e * e * e)\n");
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
 
                     case 13:
                         Console.WriteLine("\nOperadores de incremento e decremento");
-                        double numero6 = 2;
+                        double exemplo = 2;
                         Console.WriteLine($"Se eu adicionar ++ a variavel ela ganhara 1 em sua soma, e se eu adicionar -- à variavel ela perdera 1: " +
-                        $"\n Numero 6 valhe 2, mas agora valhe {++numero6}" +
-                        $"\n Numero 7 valhe 2 mas agora valhe {--numero6}");
+                        "\n O exemplo valhe 2, mas quando eu escrevo {++exemplo} ele fica" + exemplo +
+                         "\n O exemplo valhe 2, mas quando eu escrevo {--exemplo} ele fica" + exemplo);
                         Console.WriteLine("\n\n Apenas lembresse que precisa colocar tanto o ++ quanto o -- à esquerda da variavel, se colocar a direita nao ira funcionar\n Ex: {++numero12} ou {--numero12}");
-
-
+                        Console.WriteLine("Para fechar o programa aperte F ou aperte qualquer tecla para voltar a seleçao de conteudos");
+                        fechar = Console.ReadKey(true).KeyChar;
+                        if (fechar == 'f' || fechar == 'F')
+                        {
+                            Environment.Exit(0);
+                        }
+                        else if (fechar != 'p' || fechar != 'P')
+                        {
+                            Main(null);
+                        }
                         break;
-
                 }
             }
             else
             {
                 Console.WriteLine("Entrada inválida! Digite um número.");
-
             }
-
-
-
-            //colocar depois 
-
-            //Somar ou subtrair um valor ao conteudo de uma variável
-            double numero5 = 10;
-           numero5 = numero5 + 10; // Adiciona 10 ao valor atual de numero5
-            // ou escreva assim:
-           numero5 = 10;
-           numero5 += 10; //resultado é 20
-
-            //isto feito a cima valhe tanto para divisao, multiplicação e subtração
-          //
-            //incremento e decremento
- 
-
-            //
-            //operacoes trigonometricas
-
-            double angulo = 30 * (2*Math.PI) / 360; // fazer assim para converter graus em radianos
-            double seno = Math.Sin(angulo); // Seno do angulo
-            Console.WriteLine(angulo);
-            //Seno - Sin
-            //Cosseno - Cos
-            //Tangente - Tan
-
-
-            //Arcseno - Asin
-            //Arccosseno - Acos
-            //Arctangente - Atan
-
-            double arcSeno = Math.Asin(seno); // transforma o valor do seno em angulo
-            Console.WriteLine(arcSeno); // deu o angulo em radianos
-            double arcSenoGraus = arcSeno * 360 / (2 * Math.PI);
-            Console.WriteLine(arcSenoGraus); // deu o angulo em graus
-
-
-
-
-
         }
     }
 }
